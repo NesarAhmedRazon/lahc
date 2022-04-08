@@ -1,0 +1,106 @@
+/*
+Theme Name: Los Angeles Hookah Catering
+Author: Nesar Ahmed
+Author URI: https://www.upwork.com/users/~0176ab7826c765d856
+Description: This theme is for Los Angeles Hookah Catering only. Designed by <a href="http://ehsaanmesghali.com/" title="Ehsaan Mesghali">Ehsaan Mesghali</a> and Developed by <a href="https://www.upwork.com/users/~0176ab7826c765d856" title="Nesar Ahmed">Nesar Ahmed</a>
+Version: 1.0
+License: GNU General Public License v2 or later
+*/
+
+@font-face {
+    font-family: 'bignoodletitlingregular';
+    src: url('fonts/big_noodle_titling-webfont.eot');
+    src: url('fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/big_noodle_titling-webfont.woff2') format('woff2'),
+         url('fonts/big_noodle_titling-webfont.woff') format('woff'),
+         url('fonts/big_noodle_titling-webfont.ttf') format('truetype'),
+         url('fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.bottom_margin{margin-bottom:20px;}
+html, body, h1, h2, h3, h4, h5, h6, p, a, div {text-transform:uppercase;margin:0px; padding:0px;}
+body{color:#fed05b;background-color:#000; margin:0 auto;font-family:Arial, Helvetica, sans-serif;}
+a{text-decoration:none; color:#fed05b;}
+header{height: 200px;}
+.logo>a img, .logo{width: 200px;height: 200px;float: left;}
+.top_txt_container {margin-top: 50px;width: 550px;float: right;}
+.top_text {font-size: 22px;font-weight: 700;}
+.phone_number {font-size: 60px;font-weight: 700;}
+.ribon{margin-bottom: 20px;color:#1a1a1a;height:40px;}
+h2 { margin-bottom: 10px; font-size: 20px; text-transform: uppercase; font-weight: 500; }
+.ribon_text { width: 771px; text-align: center; float: left; font-family: 'bignoodletitlingregular'; font-size: 26px; line-height: 36px; }
+
+#left-triangle { width: 0; height: 0; border-right: 14px solid #1a1a1a; border-top: 18px solid transparent; border-bottom: 18px solid transparent; float:right; }
+#right-triangle { width: 0; height: 0; border-left: 14px solid #1a1a1a; border-top: 18px solid transparent; border-bottom: 18px solid transparent; float:left; }
+#sidebar { float: right; width: 250px; }
+h2.event_reel { margin-bottom: 20px; }
+#primary { width: 550px; float: left; min-height: 310px; }
+#secoendary { width: 250px; float: right; height: 310px; }
+#place_we_like { width: 250px; float: left; min-height: 250px; }
+#event_reel{ width: 550px; float: right; min-height: 250px; }
+.copyright {width:100%; float: left; font-size: 12px; margin-top: 20px; margin-bottom: 20px; }
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, select, .mc-field-group input{ background-color: transparent; border: 1px solid #fed05b!important; padding: 7px 7px 7px 10px!important; margin-bottom: 10px; text-transform: uppercase; font-size: 14px; line-height: 20px; max-width: 100%;}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .mc-field-group input{ color: #fff; }
+input.wpcf7-form-control.wpcf7-submit { background-color: #fed05b; padding: 10px 7px 7px 10px; border-style: none; margin-bottom: 0px; text-transform: uppercase; font-size: 17px; line-height: 20px; width: 100%; font-weight: 700; color: #1a1a1a; }
+.wpcf7-select{width:100%;}
+option {background-color: #1a1a1a;}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: #fed05b; 
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fed05b; 
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #fed05b; 
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fed05b; 
+}
+table{border-collapse: collapse;}
+table, tr, th, td, tbody{border:1px solid #fed05b; }
+tr{height:44px;}
+#pricelist { width: 540px; text-align: center; }
+#thead, #ammount {font-weight: 600; background-color: rgba(254,208,91,.1);}
+div#rev_slider_1_1_wrapper { border: 1px solid #fed05b;}
+ul { -webkit-padding-start: 15px;}
+li {margin-bottom:10px;}
+#ammount td:hover{ color:#B8860B; }
+a:hover{color:rgba(184,134,11,1);}
+span.wpcf7-not-valid-tip {display: grid!important; color: #f00; font-size: xx-small!important; position: absolute; width: 100px; margin-left: 10px; }
+div.wpcf7-response-output{margin:0px!important;font-size: xx-small!important;}
+polygon.cc { fill: #FED05B; transition: fill 1s; }
+svg:hover>.cc{fill:#b8860b;}
+input[type="text"]::-webkit-input-placeholder {
+color: #fed05b!important;
+}
+ 
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+color: #fed05b!important;
+}
+ 
+input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+color: #fed05b!important;
+}
+ 
+input[type="text"]:-ms-input-placeholder {  
+color: #fed05b!important;
+}
+#fwsel{color:#fed05b; }
+.gold, .silver, .PLATINUM{color:#fff!important;}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col {
+    display: inline-block;
+    padding: 5px;
+}
+

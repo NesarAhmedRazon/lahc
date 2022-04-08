@@ -1,0 +1,9 @@
+.slider {    
+    position: relative;
+    z-index: 1;
+}
+.slide {
+	border: 1px solid #fed05b;
+    width: 100%;
+    position: absolute;
+}

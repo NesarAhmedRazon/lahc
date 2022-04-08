@@ -1,0 +1,21 @@
+.lahc_wrap{
+    position: relative;
+    .lahcLabels{
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 1em;
+        display: block;
+    }
+    form{
+        .button {
+            position: fixed;
+            bottom: 1em;
+            right: 1em;
+        }
+        textarea{
+            width: 100%;
+            min-height: auto;
+            margin-bottom: 1em;
+        }
+    }
+}

@@ -1,509 +1,512 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "assets/css/variables";
+
 @font-face {
-    font-family: "Big Noodle Titling";
-    src: url('fonts/big_noodle_titling-webfont.eot');
-    src: url('fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/big_noodle_titling-webfont.woff2') format('woff2'), url('fonts/big_noodle_titling-webfont.woff') format('woff'), url('fonts/big_noodle_titling-webfont.ttf') format('truetype'), url('fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Big Noodle Titling";
+  src: url("fonts/big_noodle_titling-webfont.eot");
+  src: url("fonts/big_noodle_titling-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/big_noodle_titling-webfont.woff2") format("woff2"),
+    url("fonts/big_noodle_titling-webfont.woff") format("woff"),
+    url("fonts/big_noodle_titling-webfont.ttf") format("truetype"),
+    url("fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'sosaicons';
-    src: url('fonts/sosaicons.eot?ohogrh');
-    src: url('fonts/sosaicons.eot?ohogrh#iefix') format('embedded-opentype'), url('fonts/sosaicons.ttf?ohogrh') format('truetype'), url('fonts/sosaicons.woff?ohogrh') format('woff'), url('fonts/sosaicons.svg?ohogrh#sosaicons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: "sosaicons";
+  src: url("fonts/sosaicons.eot?ohogrh");
+  src: url("fonts/sosaicons.eot?ohogrh#iefix") format("embedded-opentype"),
+    url("fonts/sosaicons.ttf?ohogrh") format("truetype"),
+    url("fonts/sosaicons.woff?ohogrh") format("woff"),
+    url("fonts/sosaicons.svg?ohogrh#sosaicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 [class^="sosa-"],
 [class*=" sosa-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'sosaicons' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "sosaicons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .sosa-forward:before {
-    content: "\e900";
+  content: "\e900";
 }
 
 .sosa-access_time:before {
-    content: "\e901";
+  content: "\e901";
 }
 
 .sosa-date_range:before {
-    content: "\e902";
+  content: "\e902";
 }
 
-$white:#fff;
-$black: #000;
-$nGold: #ffcf5b;
-$hGold: #f3c653;
-$font1: 'Montserrat',
-sans-serif;
-$font2: 'Raleway',
-sans-serif;
+$font1: "Montserrat", sans-serif;
+$font2: "Raleway", sans-serif;
 $font3: "Big Noodle Titling";
 .old {
-    display: none
+  display: none;
 }
 
-;
 body {
-    background-color: $black;
-    color: $nGold;
-    font-family: $font2;
-    font-size: 1.1em;
-    .sec-title {
-        color: $white;
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        a {
-            color: $white;
-            transition: text-decoration 0.3s;
-            text-decoration: underline;
-            &:hover {
-                text-decoration: none;
-            }
-        }
+  background-color: $black;
+  color: $nGold;
+  font-family: $font2;
+  font-size: 1.1em;
+  .sec-title {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    a {
+      color: $white;
+      transition: text-decoration 0.3s;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
-    .ms-ext {
-        font-size: 1.5rem;
-        text-transform: none;
+  }
+  .ms-ext {
+    font-size: 1.5rem;
+    text-transform: none;
+  }
+  .ms-ext.sec-title {
+    font-size: 1.7rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  .ms-min {
+    font-size: 1.07rem;
+  }
+  .ms-form {
+    margin-bottom: 2%;
+    *:focus {
+      outline: none !important;
+      border-color: $nGold !important;
+      box-shadow: none !important;
     }
-    .ms-ext.sec-title {
-        font-size: 1.7rem;
+    .form-group {
+      margin-bottom: 0.45rem;
     }
-    p {
-        margin-bottom: 2rem;
+    input,
+    select,
+    button,
+    #cEmail,
+    .input {
+      background-color: transparent;
+      border-radius: 0;
+      border: 1px solid $nGold;
+      width: 100%;
+      font-size: 0.8em;
+      padding-left: 0.5em;
+      padding-top: 0.5em;
+      padding-bottom: 0.45em;
+      color: $nGold;
+      transition: all 0.4s;
+      &:focus,
+      &:active,
+      &:-webkit-autofill,
+      &:-webkit-autofill:focus,
+      &:autofill,
+      &:-internal-autofill-selected {
+        background-color: transparent;
+        color: $nGold;
+      }
+      &::-webkit-input-placeholder {
+        color: $nGold;
+        transition: color 0.3s !important;
+      }
+      &:focus::-webkit-input-placeholder {
+        color: transparent !important;
+      }
     }
-    .ms-min {
-        font-size: 1.07rem;
+    button {
+      &:hover {
+        color: $black;
+        background-color: $nGold;
+      }
     }
-    .ms-form {
-        margin-bottom: 2%;
-        *:focus {
-            outline: none!important;
-            border-color: $nGold!important;
-            box-shadow: none!important;
-        }
-        .form-group {
-            margin-bottom: 0.45rem;
-        }
-        input,
-        select,
-        button,
-        #cEmail,
-        .input {
-            background-color: transparent;
-            border-radius: 0;
-            border: 1px solid $nGold;
-            width: 100%;
-            font-size: 0.8em;
-            padding-left: 0.5em;
-            padding-top: 0.5em;
-            padding-bottom: 0.45em;
-            color: $nGold;
-            transition: all 0.4s;
-            &:focus,
-            &:active,
-            &:-webkit-autofill,
-            &:-webkit-autofill:focus,
-            &:autofill,
-            &:-internal-autofill-selected {
-                background-color: transparent;
-                color: $nGold;
-            }
-            &::-webkit-input-placeholder {
-                color: $nGold;
-                transition: color 0.3s!important;
-            }
-            &:focus::-webkit-input-placeholder {
-                color: transparent!important;
-            }
-        }
-        button {
-            &:hover {
-                color: $black;
-                background-color: $nGold;
-            }
-        }
-        .ms-btn {
-            font-weight: 700;
-            font-size: 1.4rem;
-            padding: .75rem;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        .custom-select {
-            position: relative;
-            padding: 0;
-            border-radius: 0;
-            background: transparent;
-            border: 1px solid $nGold;
-            font-family: $font1;
-            select {
-                display: none;
-                /*hide original SELECT element:*/
-            }
-            .select-selected {
-                padding-left: 0.5em;
-                padding-top: 0.5em;
-                padding-bottom: 0.35em;
-                height: 2.3em;
-                &:after {
-                    position: absolute;
-                    content: "";
-                    top: 1em;
-                    right: 0.5em;
-                    width: 0;
-                    height: 0;
-                    border: 6px solid transparent;
-                    border-color: $nGold transparent transparent transparent;
-                }
-                &.select-arrow-active:after {
-                    border-color: transparent transparent $nGold transparent;
-                    top: 7px;
-                }
-            }
-            .select-items div,
-            .select-selected {
-                color: $nGold;
-                cursor: pointer;
-                user-select: none;
-                font-size: 0.8em;
-                font-family: $font1;
-            }
-            /*style items (options):*/
-            .select-items {
-                position: absolute;
-                background-color: $black;
-                border: 1px solid $nGold;
-                border-bottom: 0px solid $nGold;
-                top: 100%;
-                left: 0;
-                right: 0;
-                z-index: 99;
-                div {
-                    text-align: center;
-                    padding-top: 0.3em;
-                    padding-bottom: 0.35em;
-                    font-size: 0.8em;
-                    border-bottom: 1px solid $nGold;
-                    transition: background-color 0.5s, color 0.4s;
-                    &:hover {
-                        background-color: $nGold;
-                        color: $black;
-                    }
-                }
-            }
-            /*hide the items when the select box is closed:*/
-            .select-hide {
-                display: none;
-            }
-        }
+    .ms-btn {
+      font-weight: 700;
+      font-size: 1.4rem;
+      padding: 0.75rem;
+      text-transform: uppercase;
+      cursor: pointer;
     }
+    .custom-select {
+      position: relative;
+      padding: 0;
+      border-radius: 0;
+      background: transparent;
+      border: 1px solid $nGold;
+      font-family: $font1;
+      select {
+        display: none;
+        /*hide original SELECT element:*/
+      }
+      .select-selected {
+        padding-left: 0.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.35em;
+        height: 2.3em;
+        &:after {
+          position: absolute;
+          content: "";
+          top: 1em;
+          right: 0.5em;
+          width: 0;
+          height: 0;
+          border: 6px solid transparent;
+          border-color: $nGold transparent transparent transparent;
+        }
+        &.select-arrow-active:after {
+          border-color: transparent transparent $nGold transparent;
+          top: 7px;
+        }
+      }
+      .select-items div,
+      .select-selected {
+        color: $nGold;
+        cursor: pointer;
+        user-select: none;
+        font-size: 0.8em;
+        font-family: $font1;
+      }
+      /*style items (options):*/
+      .select-items {
+        position: absolute;
+        background-color: $black;
+        border: 1px solid $nGold;
+        border-bottom: 0px solid $nGold;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        div {
+          text-align: center;
+          padding-top: 0.3em;
+          padding-bottom: 0.35em;
+          font-size: 0.8em;
+          border-bottom: 1px solid $nGold;
+          transition: background-color 0.5s, color 0.4s;
+          &:hover {
+            background-color: $nGold;
+            color: $black;
+          }
+        }
+      }
+      /*hide the items when the select box is closed:*/
+      .select-hide {
+        display: none;
+      }
+    }
+  }
 }
 
 .ms-modal {
-    .modal-content {
-        background-color: $black;
-        border-color: $nGold;
-        .close {
-            font-size: 1em;
-            width: fit-content;
-        }
-        .modal-header {
-            border-bottom-color: $nGold;
-        }
+  .modal-content {
+    background-color: $black;
+    border-color: $nGold;
+    .close {
+      font-size: 1em;
+      width: fit-content;
     }
+    .modal-header {
+      border-bottom-color: $nGold;
+    }
+  }
 }
 
 .pkg_table {
-    font-family: $font1;
-    .t_title {
-        font-weight: 600;
-        padding: 0.55rem;
-        border: 1px solid $nGold;
-        background-color: rgba(254, 208, 91, 0.1) !important;
+  font-family: $font1;
+  .t_title {
+    font-weight: 600;
+    padding: 0.55rem;
+    border: 1px solid $nGold;
+    background-color: rgba(254, 208, 91, 0.1) !important;
+  }
+  .table_row {
+    .pkg {
+      border-left: 1px solid $nGold;
+      border-right: 1px solid $nGold;
+      border-bottom: 1px solid $nGold;
+      &:first-child {
+        border-right: 0px solid $nGold;
+      }
+      &:last-child {
+        border-left: 0px solid $nGold;
+      }
     }
-    .table_row {
-        .pkg {
-            border-left: 1px solid $nGold;
-            border-right: 1px solid $nGold;
-            border-bottom: 1px solid $nGold;
-            &:first-child {
-                border-right: 0px solid $nGold;
-            }
-            &:last-child {
-                border-left: 0px solid $nGold;
-            }
-        }
-    }
-    .p_title {
-        border-bottom-style: solid;
-        border-bottom-color: $nGold;
-        border-bottom-width: 2px;
-        font-weight: 700;
-        font-size: 1.4rem;
-        padding: .75rem;
-    }
-    .p_info {
-        border-bottom: 1px solid $nGold;
-        letter-spacing: 2px;
-        padding: .75rem;
-    }
-    .p_price {
-        background-color: rgba(254, 208, 91, 0.1) !important;
-        font-weight: 700;
-        font-size: 1.4rem;
-        padding: .75rem;
-    }
+  }
+  .p_title {
+    border-bottom-style: solid;
+    border-bottom-color: $nGold;
+    border-bottom-width: 2px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
+  .p_info {
+    border-bottom: 1px solid $nGold;
+    letter-spacing: 2px;
+    padding: 0.75rem;
+  }
+  .p_price {
+    background-color: rgba(254, 208, 91, 0.1) !important;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
 }
 
 .info_box {
-    padding: 1em;
-    position: relative;
-    background-color: $black;
-    width: fit-content;
-    transform-style: preserve-3d;
-    font-size: 1.2em;
-    .title {
-        color: $white;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+  padding: 1em;
+  position: relative;
+  background-color: $black;
+  width: fit-content;
+  transform-style: preserve-3d;
+  font-size: 1.2em;
+  .title {
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .data {
+    font-weight: 300;
+    font-family: $font1;
+    > a {
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
     }
-    .data {
-        font-weight: 300;
-        font-family: $font1;
-        >a {
-            text-decoration: none;
-            color: $white;
-            text-transform: uppercase;
-        }
-    }
+  }
 }
 
 .maillisting {
-    cursor: pointer;
-    background-color: $nGold;
-    font-family: $font3;
-    font-size: 1.8em;
-    line-height: 1;
+  cursor: pointer;
+  background-color: $nGold;
+  font-family: $font3;
+  font-size: 1.8em;
+  line-height: 1;
+  color: $black;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $hGold;
+    text-decoration: none;
     color: $black;
-    transition: all 0.3s;
-    &:hover {
-        background-color: $hGold;
-        text-decoration: none;
-        color: $black;
-    }
-    &:before,
-    &:after {
-        content: "";
-        width: 1.4em;
-        height: 100%;
-        position: absolute;
-        border: 0.72em solid transparent;
-    }
-    &:before {
-        left: 0;
-        top: 0;
-        border-left: 0.72em solid $black;
-    }
-    &:after {
-        right: 0;
-        top: 0;
-        border-right: 0.72em solid $black;
-    }
+  }
+  &:before,
+  &:after {
+    content: "";
+    width: 1.4em;
+    height: 100%;
+    position: absolute;
+    border: 0.72em solid transparent;
+  }
+  &:before {
+    left: 0;
+    top: 0;
+    border-left: 0.72em solid $black;
+  }
+  &:after {
+    right: 0;
+    top: 0;
+    border-right: 0.72em solid $black;
+  }
 }
 
 .body_part {
-    .pkg_table {
-        border: 1px solid $nGold;
-        .t_title {
-            border: none;
-            border-bottom: 1px solid $nGold;
-        }
-        .pkg {
-            &:not(:first-child) {
-                border-right: 1px solid $nGold;
-            }
-            &:last-child {
-                border-right: 0px solid $nGold
-            }
-        }
+  .pkg_table {
+    border: 1px solid $nGold;
+    .t_title {
+      border: none;
+      border-bottom: 1px solid $nGold;
     }
+    .pkg {
+      &:not(:first-child) {
+        border-right: 1px solid $nGold;
+      }
+      &:last-child {
+        border-right: 0px solid $nGold;
+      }
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
-    .maillisting {
-        font-size: 1.5em;
-        &:before,
-        &:after {
-            border: 0;
-            display: none;
+  .maillisting {
+    font-size: 1.5em;
+    &:before,
+    &:after {
+      border: 0;
+      display: none;
+    }
+  }
+  body {
+    .ms-ext {
+      font-size: 0.8em;
+      &.sec-title {
+        font-size: 0.8em;
+      }
+    }
+  }
+  .cpr {
+    font-size: 0.65rem;
+  }
+  .body_part {
+    .pkg_table {
+      border: 0;
+      .t_title {
+        background-color: unset !important;
+      }
+      .pkg {
+        margin-bottom: 1em;
+        border: 1px solid #ffcf5b;
+        &:not(:first-child),
+        &:last-child {
+          border: 1px solid $nGold;
         }
+      }
     }
-    body {
-        .ms-ext {
-            font-size: 0.8em;
-            &.sec-title {
-                font-size: 0.8em;
-            }
-        }
-    }
-    .cpr {
-        font-size: 0.65rem;
-    }
-    .body_part {
-        .pkg_table {
-            border: 0;
-            .t_title {
-                background-color: unset !important;
-            }
-            .pkg {
-                margin-bottom: 1em;
-                border: 1px solid #ffcf5b;
-                &:not(:first-child),
-                &:last-child {
-                    border: 1px solid $nGold;
-                }
-            }
-        }
-    }
+  }
 }
 
 .inp {
-    //height: 2rem;
-    color: $nGold;
-    border-radius: 0;
-    border: 1px solid $nGold;
-    background-color: transparent;
+  //height: 2rem;
+  color: $nGold;
+  border-radius: 0;
+  border: 1px solid $nGold;
+  background-color: transparent;
 }
 
 .simpilepicker-date-picker {
-    background-color: $black;
-    .simplepicker-select-pane {
-        align-items: center;
-        font-weight: 600;
+  background-color: $black;
+  .simplepicker-select-pane {
+    align-items: center;
+    font-weight: 600;
+  }
+  .simplepicker-icon {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    font-family: "sosaicons" !important;
+    &::before {
+      color: #ffcf5b;
+      position: absolute;
+      line-height: 1;
+      font-size: 1.5em;
     }
-    .simplepicker-icon {
-        background-image: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.7em;
-        width: 2em;
-        height: 2em;
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        font-family: 'sosaicons' !important;
-        &::before {
-            color: #ffcf5b;
-            position: absolute;
-            line-height: 1;
-            font-size: 1.5em;
-        }
-        &.simplepicker-icon-calender {
-            &::before {
-                content: "\e902";
-                color: $black;
-            }
-        }
-        &.simplepicker-icon-time {
-            &::before {
-                content: "\e901";
-                color: $black;
-            }
-        }
-        &.simplepicker-icon-next {
-            &:before {
-                content: "\e900";
-            }
-        }
-        &.simplepicker-icon-previous {
-            &:before {
-                content: "\e900";
-                transform: rotate( 180deg);
-            }
-        }
-    }
-    .simplepicker-day-header {
-        padding: 1em;
+    &.simplepicker-icon-calender {
+      &::before {
+        content: "\e902";
         color: $black;
-        background-color: $nGold;
+      }
     }
-    .simplepicker-date-section {
-        background-color: $hGold;
+    &.simplepicker-icon-time {
+      &::before {
+        content: "\e901";
         color: $black;
-        .simplepicker-fade {
+      }
+    }
+    &.simplepicker-icon-next {
+      &:before {
+        content: "\e900";
+      }
+    }
+    &.simplepicker-icon-previous {
+      &:before {
+        content: "\e900";
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .simplepicker-day-header {
+    padding: 1em;
+    color: $black;
+    background-color: $nGold;
+  }
+  .simplepicker-date-section {
+    background-color: $hGold;
+    color: $black;
+    .simplepicker-fade {
+      color: $black;
+      opacity: 0.8;
+    }
+  }
+  .simplepicker-picker-section {
+    .simplepicker-calender {
+      tbody {
+        td {
+          &.active,
+          &:active {
             color: $black;
-            opacity: 0.8;
-        }
-    }
-    .simplepicker-picker-section {
-        .simplepicker-calender {
-            tbody {
-                td {
-                    &.active,
-                    &:active {
-                        color: $black;
-                        &:after {
-                            background-color: $nGold;
-                        }
-                    }
-                }
+            &:after {
+              background-color: $nGold;
             }
+          }
         }
-        .simplepicker-time-section {
-            input {
-                padding: 1em;
-                width: fit-content;
-                height: fit-content;
-                max-width: fit-content;
-                max-height: fit-content;
-                color: $black;
-                background-color: $hGold;
-                font-weight: 600;
-                &:focus {
-                    border-bottom-color: $nGold;
-                }
-            }
-        }
+      }
     }
-    .simplepicker-bottom-part {
-        .simplepicker-btn {
-            border-color: $nGold;
-            color: $nGold;
-            &:hover {
-                background-color: $nGold;
-                color: $black;
-            }
+    .simplepicker-time-section {
+      input {
+        padding: 1em;
+        width: fit-content;
+        height: fit-content;
+        max-width: fit-content;
+        max-height: fit-content;
+        color: $black;
+        background-color: $hGold;
+        font-weight: 600;
+        &:focus {
+          border-bottom-color: $nGold;
         }
+      }
     }
+  }
+  .simplepicker-bottom-part {
+    .simplepicker-btn {
+      border-color: $nGold;
+      color: $nGold;
+      &:hover {
+        background-color: $nGold;
+        color: $black;
+      }
+    }
+  }
 }
 
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-        -webkit-text-fill-color: $nGold;
-        -webkit-box-shadow: 0 0 0px 100px $black inset !important;
-    }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-text-fill-color: $nGold;
+    -webkit-box-shadow: 0 0 0px 100px $black inset !important;
+  }
 }

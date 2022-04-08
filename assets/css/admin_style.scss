@@ -21,5 +21,14 @@
   }
 }
 #product_data {
-  background-color: $hGold;
+  background-color: $hGold2;
+}
+.woocommerce_options_panel {
+  & .form-field {
+    &._regular_price_field {
+      & #_regular_price {
+        background-color: $hGold2;
+      }
+    }
+  }
 }

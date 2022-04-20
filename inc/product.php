@@ -31,7 +31,7 @@ add_action('add_meta_boxes', 'add_datas');
 function product_metas($post)
 {
 	echo '<div class="row">';
-	dropdown_html($post, 'Number of Hookah', 6, 'HOOKAHS', 'hookah_count');
+	dropdown_html($post, 'Number of Hookah', 15, 'HOOKAHS', 'hookah_count');
 	dropdown_html($post, 'Book for Hours', 6, 'Hours', 'hours_count');
 	dropdown_html($post, 'Available Server', 2, 'SERVER', 'server_count');
 	dropdown_html($post, 'FRUIT HEADS', array('no', 'yes'), '', 'fruit_heads');

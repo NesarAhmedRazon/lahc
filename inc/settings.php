@@ -49,7 +49,7 @@ function lahc_settings_menu_page()
         </div>
     </form>
 </div>
-<? }
+<?php }
 
 
 // Get Data at Front-End
